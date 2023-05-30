@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color:rgba(0, 0, 0, 0.4);
+    /* padding是指内部文字和边框的间距，第一个指的是横向，第二个数值指的是纵向 */
+    padding: 20px 40px;
+    border-radius: 5px;
+} 
+.container h1{
+    text-align: center;
+}
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+.form-control input{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    width: 100%; 
+    padding: 15px 0;
+    color: white;
+}
+.form-control input:focus {
+    outline: 0;
+    border-bottom-color:lightblue ;
+}
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.form-control input:focus + label{
+    color: lightblue;
+    transform: translateY(-30px);
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.text a{
+    text-decoration: none;
+    color: white;
+}
+.text a:hover {
+    color: lightblue;
+}
